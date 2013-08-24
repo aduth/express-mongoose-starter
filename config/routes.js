@@ -12,10 +12,10 @@ module.exports = function (app, passport) {
   //=============================
   // Bookmark
   //=============================
-  var PersonController = require('../app/controllers/person');
-  app.get('/person/', PersonController.index);
-  app.get('/person/:id', PersonController.show);
-  app.post('/person/', PersonController.create);
-  app.put('/person/', PersonController.update);
-  app.del('/person/:id', PersonController.delete);
+  var person = require('../app/controllers/person');
+  app.get('/person/', person.index);
+  app.get('/person/:id', person.show);
+  app.post('/person/', person.create);
+  app.put('/person/', person.update);
+  app.del('/person/:id', person.delete);
 };
