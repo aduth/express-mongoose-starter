@@ -4,8 +4,8 @@ A very bare-bones starter app, using only Express and Mongoose. Essentially, a s
 
 Requirements:
 
-* Node.js (with npm)
-* MongoDB
+* [Node.js](http://nodejs.org/download/) (with npm)
+* [MongoDB](http://www.mongodb.org/downloads)
 
 Installation:
 
