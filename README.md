@@ -10,8 +10,15 @@ Requirements:
 Installation:
 
 ```bash
-git clone git://github.com/aduth/express-mongoose-starter
-cd express-mongoose-starter
-npm install
-node server.js
+$ git clone git://github.com/aduth/express-mongoose-starter ./my-app
+$ cd my-app
+$ npm install
 ```
+
+After installing, start the application using Node:
+
+```bash
+$ node server.js
+```
+
+You can now view the application in your browser by navigating to [http://localhost:3000/](http://localhost:3000/)
