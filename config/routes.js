@@ -16,6 +16,6 @@ module.exports = function (app) {
   app.get('/person/', person.index);
   app.get('/person/:id', person.show);
   app.post('/person/', person.create);
-  app.put('/person/', person.update);
+  app.put('/person/:id', person.update);
   app.del('/person/:id', person.delete);
 };
