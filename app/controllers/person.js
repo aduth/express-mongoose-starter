@@ -4,11 +4,7 @@ var Person = require('../models/person.js');
 // List
 //=============================
 exports.index = function(req, res) {
-  Person.find(function(err, people) {
-    if (err) throw err;
-
-    res.send(people);
-  });
+  res.render('people', {name: "Lexsa"});
 };
 
 //=============================
@@ -16,11 +12,12 @@ exports.index = function(req, res) {
 //=============================
 exports.show = function(req, res) {
   var id = req.params.id;
+  console.log(id);
 
   Person.findOne({ _id: id }, function(err, person) {
     if (err) throw err;
 
-    res.send(person);
+    res.render('person', {firstName: person.firstName});
   });
 };
 
