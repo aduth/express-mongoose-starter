@@ -5,8 +5,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-mongoose.connect(process.ENV["MONGODB_URI"] || "mongodb://localhost/sunflower");
-
 /** 
 * schema definition
 */
