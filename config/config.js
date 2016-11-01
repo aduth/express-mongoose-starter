@@ -4,5 +4,7 @@ module.exports = {
     rootPath: require('path').normalize(__dirname + '/..'),
     db: process.env.DATABASE_URL || 'mongodb://localhost/test'
   },
-  production: {}
+  production: {
+    db: process.env.MONGODB_URI
+  }
 };
