@@ -9,19 +9,7 @@ var mongoose = require('mongoose'),
 var personSchema = new Schema({
   firstName: String,
   lastName: String,
-  age: Number,
-  createdAt: {
-    type: Date,
-    default: Date.now
-  }
 });
-
-//=============================
-// Validation
-//=============================
-personSchema.path('age').validate(function(value) {
-  return value > 0;
-}, 'A person\'s age must be positive');
 
 //=============================
 // Virtual properties
@@ -37,4 +25,9 @@ personSchema.statics.findByName = function(name, cb) {
   this.find({ name: new RegExp(name, 'i') }, cb);
 };
 
-module.exports = mongoose.model('Person', personSchema);
+
+var Person = mongoose.model('Person', personSchema);
+
+module.exports = Person
+
+new Person({firstName: "Foo", lastName: "Bar"}).save();

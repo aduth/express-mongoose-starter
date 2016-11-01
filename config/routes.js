@@ -6,7 +6,6 @@ module.exports = function (app) {
   // Static
   //=============================
   app.get('/', function(req, res) {
-    res.sendfile('/index.html', { root: config.rootPath });
   });
 
   //=============================
