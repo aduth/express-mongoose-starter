@@ -43,10 +43,10 @@ module.exports = {
 };
 
 // create 10 new tasks
-// var Task1 = new Tasks({
-//   task_description: 'Buy coffee for the next person in line',
-//   task_id: 1
-// });
+ var Task1 = new Tasks({
+   task_description: 'Buy coffee for the next person in line',
+   task_id: 1
+ });
 
 // var Task2 = new Tasks({
 //   task_description: 'Write a letter to a friend',
@@ -97,11 +97,11 @@ module.exports = {
 *save the tasks
 */
 
-// Task1.save(function(err) {
-//   if (err) throw err;
+ Task1.save(function(err) {
+   if (err) throw err;
   
-//   console.log('Task created!');
-// });
+   console.log('Task created!');
+ });
 
 // Task2.save(function(err) {
 //   if (err) throw err;
