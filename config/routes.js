@@ -6,6 +6,7 @@ module.exports = function (app) {
   // Static
   //=============================
   app.get('/', function(req, res) {
+    res.send('woot kyle is here');
   });
 
   //=============================
