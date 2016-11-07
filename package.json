@@ -4,7 +4,9 @@
   "description": "A very bare-bones starter app, using only Express and Mongoose.",
   "dependencies": {
     "express": "~3.3.5",
-    "mongoose": "~3.6.17"
+    "express-handlebars": "^3.0.0",
+    "mongoose": "~3.6.17",
+    "nodemon": "^1.11.0"
   },
   "repository": {
     "type": "git",
